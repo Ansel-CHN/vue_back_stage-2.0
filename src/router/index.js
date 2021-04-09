@@ -1,3 +1,11 @@
+/*
+ * @Author: your name
+ * @Date: 2021-04-07 20:00:31
+ * @LastEditTime: 2021-04-08 17:04:32
+ * @LastEditors: Please set LastEditors
+ * @Description: In User Settings Edit
+ * @FilePath: \vue_back_stage\src\router\index.js
+ */
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 
@@ -14,7 +22,18 @@ const routes = [
   {
     path: '/home',
     name: 'Home',
-    component: () => import('../components/Home.vue')
+    component: () => import('../components/Home.vue'),
+    redirect: '/Welcome',
+    children: [
+      {
+        path: '/welcome',
+        component: () => import('../components/Welcome.vue')
+      },
+      {
+        path: '/users',
+        component: () => import('../components/user/Users.vue')
+      }
+    ]
   }
 ]
 

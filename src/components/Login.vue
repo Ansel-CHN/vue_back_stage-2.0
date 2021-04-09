@@ -1,7 +1,7 @@
 <!--
  * @Author: your name
  * @Date: 2021-04-06 15:23:41
- * @LastEditTime: 2021-04-07 00:17:58
+ * @LastEditTime: 2021-04-08 14:51:48
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \vue_back_stage\src\components\Login.vue
@@ -39,7 +39,7 @@ export default {
     return {
       // 这是登录表单的数据绑定对象
       loginForm: {
-        username: 'adimin',
+        username: 'admin',
         password: '123456'
       },
       //   表单的验证规则对象
@@ -71,7 +71,7 @@ export default {
         // 把token保存在客户端
         window.sessionStorage.setItem('token', res.data.token)
         // 通过编程式导航跳转到后台主页，路由地址式 /home
-        this.$route.push('/home')
+        this.$router.push('/home')
       })
     }
   }
