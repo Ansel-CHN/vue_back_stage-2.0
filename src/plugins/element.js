@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2021-04-06 10:17:15
- * @LastEditTime: 2021-04-09 17:01:40
+ * @LastEditTime: 2021-04-11 22:08:13
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \vue_back_stage\src\plugins\element.js
@@ -31,7 +31,11 @@ import {
   Tooltip,
   Pagination,
   Dialog,
-  MessageBox
+  MessageBox,
+  Tag,
+  Tree,
+  Select,
+  Option
 } from 'element-ui'
 
 Vue.use(Button)
@@ -56,5 +60,9 @@ Vue.use(Switch)
 Vue.use(Tooltip)
 Vue.use(Pagination)
 Vue.use(Dialog)
+Vue.use(Tag)
+Vue.use(Tree)
+Vue.use(Select)
+Vue.use(Option)
 Vue.prototype.$message = Message
 Vue.prototype.$confirm = MessageBox.confirm

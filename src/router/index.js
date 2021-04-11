@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2021-04-07 20:00:31
- * @LastEditTime: 2021-04-08 17:04:32
+ * @LastEditTime: 2021-04-10 19:54:05
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \vue_back_stage\src\router\index.js
@@ -32,6 +32,18 @@ const routes = [
       {
         path: '/users',
         component: () => import('../components/user/Users.vue')
+      },
+      {
+        path: '/roles',
+        component: () => import('../components/power/Roles.vue')
+      },
+      {
+        path: '/rights',
+        component: () => import('../components/power/Rights.vue')
+      },
+      {
+        path: '/reports',
+        component: () => import('../components/report/Report.vue')
       }
     ]
   }
